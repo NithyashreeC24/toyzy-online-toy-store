@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOYZY</title>
+    <link rel="icon" href="./favicon-32x32.png" >
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+    <div class="mainpage">
+        <div class="slidingtext">
+            <marquee class="slidetextheading">Welcome to TOYZY!!</marquee>
+        </div>
+        <div class="navigation d-flex justify-content-between  ">
+            <img src="./assests/icon.png" height="70px" width="80px">
+            <div class="nav-bottom d-flex align-items-center">
+                <a href="#home-section" class="nav-btn">Home</a>
+                <div class="dropdown">
+                    <a href="#shop_by_category">
+                    <button class="nav-btn dropbtn">Categories </button>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="shop-by-category.html#soft_toys">Soft Toys</a>
+                        <a href="shop-by-category.html#cars">Cars</a>
+                        <a href="shop-by-category.html#dolls">Dolls</a>
+                        <a href="shop-by-category.html#puzzles">Puzzles</a>
+                        <a href="shop-by-category.html#learning_toys">Learning Toys</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#shop_by_age">
+                    <button class="nav-btn dropbtn">Shop by age </button>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="shop-by-age.html#age-0-11">0-11 Months</a>
+                        <a href="shop-by-age.html#age-1-2-yrs">1-2 Years</a>
+                        <a href="shop-by-age.html#age-3-6-yrs">3-6 Years</a>
+                        <a href="shop-by-age.html#age-5-15-yrs">7-15 Years</a>
+                        <a href="shop-by-age.html#age-16yrs_and_above">16 and above</a>
+                    </div>
+                </div>
+                <a href="#our_story" class="nav-btn">Our Story</a>
+                <a href="#footer" class="nav-btn">Support</a>
+            </div>
+            <div class="d-flex align-items-center">
+    
+    <a href="acc_login.html" class="d-flex align-items-center mr-3">
+        <img src="./assests/login.png" height="40px" width="40px" class="loginimage mr-2">
+        <span style="color:black; font-weight:bold;">Login</span>
+    </a>
+
+    
+    <a href="cart.html" class="d-flex align-items-center">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJUAAACUCAMAAACtIJvYAAAAYFBMVEX///8AAAC3t7fq6urk5OSbm5sZGRk2NjZdXV1MTEz09PT39/fv7+/AwMBVVVWNjY0tLS2UlJTIyMh1dXXQ0NBGRkaqqqrW1tZpaWl7e3sREREjIyPe3t6hoaGGhoY9PT1m2pc7AAAD6klEQVR4nO2b3ZKiMBCFbUD+QQQZEVTe/y2nG8XRZR3Z5KSgavNdzBVhTqDpnHTHzcZisVgsFovFYrFYLJb14lbRK5W7tCTmRH9yWloSU01U1cnSmvgNhkXwhE9UnJfWNMHhh5UtLWLCuSW6LC1iSkcULq1hSs6vcGkNU7asag0Z65UDq3KWFjHBW0kefSXmwOodgxyUZF0nyR6MUuL5Mq1KKfGUplXtVFQlvBRWqWuEVF5EqaJqUxMFSgNnsGNVqdLIq/LIz8iM1YyS2Aa1z/cjcaGcDM+sao9VM3JgR/KlNtTtiRqsmhEJdlX3xqa5NhNYHLKBpzh2T9QdoWruJCFRpDo4I0O2wSWNld8zFe5HUg52xtd40L9xYVWqYbXZ8Os34pIbDthYebR8wAY2hUmglXL03v9bzp1WvLq8MFQ4NSOO3rcdc2Dl+GqDbh68mqg2JBzsvc5c1c3ZL4hh0NqWS7jDqw2e9k1bA7ZB37dFRD5IzIOTtsdV99fvYXcc6X3YmYY9e4MkwaveLaS4prRve0+pv2CkETzc2TC0utlGXDK2jMXBHuiGKq8OLXT7ldQA01aiXbK4Y81g5+UBcZNnMNOUdgBAzIO9ljseqcAumc1RoO6OR8DVhriHGEmwbTiyO97q38bFTG4E1B8S55jrB8KIuGP9YB9sQwdzyVJh6BE3cpAuOW5BTSsxtID4vHGG7TB5ejnkRhvkbhzZk2tg3hbZk2PDEGK2vUDbcC5gFbGzD7MNGa6cIj05UAua3bGPqrSyp+0R+XgwIAWqmnJB2YakACYZWAvahZZ/CWQbMmiJpwDl0SvEHT/fDXEfNgw1yhSlpVS4o1AfH3cYoQyQzWaQ2d4iNaGC/dapfzkwpgMmL0hNhiqcbccgj8pQP1UD2X+v77yTVFaX1jBFqrVri6rbtstA10sTKfi265Mlr5Ca/RYEahOeY3M7SFbaQFXBaqzZqfdBtBWwB+p6KFZwDPz/Jjlk5fyvKDn+y9XKbOuWqAvn7Q0TJ+j46gjet37FfaSuOTZXao03zJ4b7n+yzmdZydPvMAwdwxu4DHIyZ/h3Hz2XLOvtLsuGq40cLRsQr9wNEbWbM33ZGA0R9WX0HR4fvd60Ziv/IR1Kq6x56IO2p14QB39vKszoC3g/S55svI2ldCnM3I0Wf13hB1VP1ReeQ2tK1MYLxieUtTMqkhLkt3EErFlNEUfTsKyyoBkNItmGNB4/4pqMemxvyD1FK38/l0k90U6dP1xtcj/y8+OAOedinw7t40pWf+Nwz+7NrLkf7gtUY3qX6zqnPNzPzdSxc83zneHF2WKxWCwWi8VisVgsFkN8A7LwLPhxYSP7AAAAAElFTkSuQmCC" height="40px" width="40px" class="cartimage mr-2">
+        <span id="cart-count" style="color:black; font-weight:bold;">0</span>
+    </a>
+</div>
+
+       
+
+        </div>
+        <div id="home-section" >
+            <div id="home-carousel" class="carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100 carousel-inner img" src="./assests/carousel1.jpg" alt="First slide" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 carousel-inner img" src="./assests/carousel2.jpg" alt="Second slide" loading="lazy">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100 carousel-inner img" src="./assests/carousel3.jpg" alt="Third slide" loading="lazy">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div id="home-enquiry" class="enquiry">
+                <div >
+                    <img src="./assests/freedelivery.png" height="60px" width="60px" loading="lazy"/>
+                    <h3>Free Shipping</h3>
+                    <p>On everything</p>
+                </div>
+                <div>
+                    <img src="./assests/bulkorder.png" height="60px" width="60px" loading="lazy"/>
+                    <h3>Bulk Order Deals</h3>
+                    <p>Email - toyzy@gmail.com</p>
+                </div>
+                <div>
+                    <img src="./assests/contact.png" height="50px" width="50px" loading="lazy"/>
+                    <h3>Contact Us</h3>
+                    <p>8660016881</p>
+                </div>
+            </div>
+        </div>
+         <div id="shop_by_category">
+            <div class="shop-by-category ">
+                <h3 class="text-center mb-4">Shop by category</h3>
+                <div class="row text-center">
+                    
+                    <div class="col-6 col-md-2 mb-3">
+                        <img src="./assests/soft_toys.jpg" alt="soft-toys" loading="lazy">
+                        <p class="sb_p">Soft Toys</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <img src="./assests/cars.jpg"  alt="cars" loading="lazy">
+                        <p class="sb_p">Cars</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <img src="./assests/dolls.jpg" alt="dolls" loading="lazy">
+                        <p class="sb_p">Dolls</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <img src="./assests/puzzles.jpg"  alt="puzzles" loading="lazy">
+                        <p class="sb_p">Puzzles</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <img src="./assests/learning_toy.jpg" alt="learning toys" loading="lazy">
+                        <p class="sb_p">Learning Toys</p>
+                    </div>
+                    <a href="shop-by-category.html">
+                    <button class="btn mt-auto"style="background-color: #e3447c;color: #fff;">Shop now!!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="shop_by_age">
+            <div class="shop-by-age my-2">
+                <h3 class="text-center mb-4">Shop by Age</h3>
+                <div class="row text-center">
+                    <div class="col-6 col-md-2 mb-3">
+                        <img src="./assests/0-11months.jpg" class="img-fluid rounded shadow" alt="0-11 months" loading="lazy">
+                        <p class="sb_p">0-11 Months</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <img src="./assests/1-2 years.jpg" class="img-fluid rounded shadow" alt="1-2 years" loading="lazy">
+                        <p class="sb_p">1-2 Years</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <img src="./assests/3-6 years.jpg" class="img-fluid rounded shadow" alt="3-6 years" loading="lazy">
+                        <p class="sb_p">3-6 Years</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <img src="./assests/7-15 years.jpg" class="img-fluid rounded shadow" alt="7-15 years" loading="lazy">
+                        <p class="sb_p">7-15 Years</p>
+                    </div>
+                    <div class="col-6 col-md-2 mb-3">
+                        <img src="./assests/16 and above.jpg" class="img-fluid rounded shadow" alt="16 and above" loading="lazy">
+                        <p class="sb_p">16 & Above</p>
+                    </div>
+                    <a href="shop-by-age.html">
+                    <button class="btn mt-auto"style="background-color: #e3447c;color: #fff;">Shop now!!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="our_story">
+       <div id="our_story_reviews">
+  
+  <div class="our_story_combined">
+    <div class="ourstory_img">
+      <img src="./assests/about_us.jpg" alt="About Toyzy" loading="lazy"/>
+    </div>
+    <div class="ourstory_text">
+      <h3>About Us</h3>
+      <p>At Toyzy, we believe that every smile begins with play. Our mission is to bring joy, learning, and imagination into every child’s life through toys that are safe, fun, and full of wonder. From cuddly soft toys that comfort tiny hearts to dolls, puzzles, cars, and creative learning games, we carefully curate every product to inspire curiosity and create lasting memories. More than just a toy store, Toyzy is a world of happiness where parents trust and children fall in love with playtime all over again.</p>
+    </div>
+  </div>
+
+  
+<div class="reviews_section">
+  <h3>What Our Customers Say</h3>
+  <div class="reviews_slider">
+    <div class="review_card">
+      <p class="stars">★★★★★</p>
+      <p class="review_text">“Amazing toys! My kids love them and delivery was super fast.”</p>
+      <p class="reviewer_name">- Priya S.</p>
+    </div>
+    <div class="review_card">
+      <p class="stars">★★★★☆</p>
+      <p class="review_text">“Great variety and quality. Will definitely order again.”</p>
+      <p class="reviewer_name">- Ramesh K.</p>
+    </div>
+    <div class="review_card">
+      <p class="stars">★★★★★</p>
+      <p class="review_text">“Friendly support and excellent packaging. Highly recommended!”</p>
+      <p class="reviewer_name">- Ananya P.</p>
+    </div>
+    <div class="review_card">
+      <p class="stars">★★★★★</p>
+      <p class="review_text">“Kids are so happy! Excellent product range.”</p>
+      <p class="reviewer_name">- Kavya M.</p>
+    </div>
+    <div class="review_card">
+      <p class="stars">★★★★☆</p>
+      <p class="review_text">“Affordable prices and reliable service.”</p>
+      <p class="reviewer_name">- Arjun S.</p>
+    </div>
+    <div class="review_card">
+      <p class="stars">★★★★★</p>
+      <p class="review_text">“Toyzy never disappoints. Fast delivery and great packaging.”</p>
+      <p class="reviewer_name">- Sneha R.</p>
+    </div>
+    
+  </div>
+</div>
+
+</div>
+
+       </div>
+       <div id="footer">
+       <footer class="footer_section">
+            <div class="footer_container">
+                <div class="footer_column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home-section">Home</a></li>
+                        <li><a href="#shop_by_category">Shop by Category</a></li>
+                        <li><a href="#shop_by_age">Shop by Age</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h4>Contact Us</h4>
+                    <p><strong>Email:</strong> toyzy@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 8660016881</p>
+                </div>
+                <div class="footer_column">
+                    <h4>Follow Us</h4>
+                    <div class="social_links">
+                        <ul>
+                            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+        
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="footer_bottom">Created By<span style="color:#A3D55D;font-weight: bold;"> Nithyashree</span> | © 2025 Toyzy. All Rights Reserved.</p>
+        </footer>
+        </div>
+
+
+        
+    </div>
+    <script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+
+function updateCartCount() {
+    document.getElementById("cart-count").innerText = cart.length;
+}
+
+
+function addToCart(itemName) {
+    cart.push(itemName);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    alert(itemName + " added to cart!");
+    updateCartCount(); 
+}
+
+
+updateCartCount();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous" defer></script>
+</body>
+</html>
+

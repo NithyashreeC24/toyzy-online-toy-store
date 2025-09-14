@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - TOYZY</title>
+  <link rel="stylesheet" href="./login.css">
+</head>
+<body class="login-page">
+
+  <div class="login-container">
+    <img src="./assests/icon.png" alt="TOYZY Logo" class="login-logo">
+    <h2>Login to TOYZY</h2>
+
+    <form onsubmit="login(event)">
+      <input type="email" id="login-email" placeholder="Email" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <p id="login-message" style="color: green; font-weight: bold;"></p>
+
+
+    <p>Don’t have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+
+    
+    <form id="signup-form" style="display:none;" onsubmit="signup(event)">
+      <input type="email" id="signup-email" placeholder="Email" required>
+      <input type="password" id="signup-password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+
+  </div>
+
+  <script src="./acc_login.js"></script>
+</body>
+</html>

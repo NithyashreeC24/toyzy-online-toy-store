@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart - TOYZY</title>
+  <link rel="stylesheet" href="./login.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fffafc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    h2, h3 {
+      color: #e3447c;
+    }
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #f3d9e2;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+    }
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      margin-right: 15px;
+      border-radius: 8px;
+    }
+    .remove-btn {
+      background: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .summary {
+      margin-top: 20px;
+      padding: 15px;
+      background: #fff0f6;
+      border: 1px solid #f3d9e2;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .summary h3 {
+      margin-bottom: 10px;
+    }
+    .btn-primary {
+      padding: 10px 20px;
+      background: #e3447c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    #checkout-form {
+      margin-top: 30px;
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #f3d9e2;
+      border-radius: 10px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #checkout-form label {
+      font-weight: bold;
+      color: #e3447c;
+    }
+    #checkout-form input, 
+    #checkout-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #f3d9e2;
+      border-radius: 6px;
+    }
+    #checkout-form button {
+      background: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    #checkout-form button:hover {
+      background: #218838;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="window.location.href='login.html'" 
+    style="margin:10px; padding:8px 15px; background:#e3447c; color:white; border:none; border-radius:5px; cursor:pointer;">
+    ← Back to Home
+  </button>
+
+  <h2 style="text-align:center; margin-top:10px;">Your Cart</h2>
+  <div id="cart-items" style="max-width:800px; margin:auto;"></div>
+  <div id="checkout-form" style="display:none;"></div>
+
+  <script>
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let cartDiv = document.getElementById("cart-items");
+    let checkoutDiv = document.getElementById("checkout-form");
+
+    function renderCart(){
+      cartDiv.innerHTML = "";
+      checkoutDiv.innerHTML = "";
+      if(cart.length === 0){
+          cartDiv.innerHTML = "<p style='text-align:center;'>Your cart is empty!</p>";
+          return;
+      }
+
+      let total = 0;
+
+      cart.forEach((item, index) => {
+          let div = document.createElement("div");
+          div.classList.add("cart-item");
+
+          div.innerHTML = `
+              <div style="display:flex; align-items:center;">
+                <img src="${item.image}" alt="${item.name}">
+                <div>
+                  <p style="margin:0; font-weight:bold;">${item.name}</p>
+                  <p style="margin:0; color:green;">₹${item.price}</p>
+                </div>
+              </div>
+              <button onclick="removeFromCart(${index})" class="remove-btn">❌ Remove</button>
+          `;
+          cartDiv.appendChild(div);
+
+          total += item.price;
+      });
+
+      
+      let summary = document.createElement("div");
+      summary.classList.add("summary");
+      summary.innerHTML = `
+        <h3>Total: ₹${total}</h3>
+        <button onclick="showCheckoutForm()" class="btn-primary">
+          Buy Now
+        </button>
+      `;
+      cartDiv.appendChild(summary);
+    }
+
+    function removeFromCart(index){
+      cart.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      renderCart();
+    }
+
+    
+    function showCheckoutForm(){
+      checkoutDiv.style.display = "block";
+      checkoutDiv.innerHTML = `
+        <h3 style="text-align:center;">Checkout</h3>
+        <label>Name:</label>
+        <input type="text" id="cust-name" placeholder="Enter your name">
+
+        <label>Mobile Number:</label>
+        <input type="text" id="cust-mobile" placeholder="Enter mobile number">
+
+        <label>Delivery Address:</label>
+        <textarea id="cust-address" placeholder="Enter address"></textarea>
+
+        <label>Select Location on Map:</label>
+        <div style="margin:10px 0;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.50650303879!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sen!2sin!4v1600000000000"
+            width="100%" height="250" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy">
+          </iframe>
+        </div>
+
+        <button onclick="placeOrder()">Confirm & Place Order</button>
+      `;
+      checkoutDiv.scrollIntoView({behavior:"smooth"});
+    }
+
+    
+    function placeOrder(){
+      let name = document.getElementById("cust-name").value.trim();
+      let mobile = document.getElementById("cust-mobile").value.trim();
+      let address = document.getElementById("cust-address").value.trim();
+
+      if(name === "" || mobile === "" || address === ""){
+        alert("Please fill all details before placing the order!");
+        return;
+      }
+
+      
+      localStorage.removeItem("cart");
+      cart = [];
+
+      cartDiv.innerHTML = "<h3 style='color:green; text-align:center;'>🎉 Order placed successfully! Thank you, " + name + ".</h3>";
+      checkoutDiv.innerHTML = "";
+    }
+
+    renderCart();
+  </script>
+</body>
+</html>

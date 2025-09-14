@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <title>Shop By Category</title>
+</head>
+<script src="./bootstrap/bootstrap.bundle.min.js"></script>
+<body>
+    <button onclick="window.location.href='login.html'" 
+        style="margin:10px; padding:8px 15px; background:#e3447c; color:white; border:none; border-radius:5px; cursor:pointer;">
+    ← Back to Home
+</button>
+
+    <div id="shop_by_age" class="my-5">
+        <h2 class="text-center mb-3" style="color:#e3447c">Shop by Category</h2>
+        <p class="text-center text-muted mb-5">Discover toys by type! 🎁 From soft cuddly friends to brain-teasing puzzles,  
+            cars, dolls, and more – explore categories that spark joy and creativity. 
+        </p>
+        <div id="soft_toys" class="mb-5">
+            <h4 class="mb-3" style="color: #e3447c;font-weight: bold;font-size: 1.5rem;border-bottom: 2px solid #e3447c;display: inline-block;">Soft Toys</h4>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71aLn7VCatL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="penguin">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Penguin Soft Toy</h6>
+                            <p class="card-text text-success mb-1">₹299</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/61xbr4it8-L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="4-soft toys">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">odinbirds Pack of 4 Elegant Rabbit & Penguin Soft and Stuffed Dog, Elephant Soft Toys</h6> <!-- already had name -->
+                            <p class="card-text text-success mb-1">₹498</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/51nqXz7iWrL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="octopus">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Storio Toy Octopus Plushie Reversible Soft Toys</h6> 
+                            <p class="card-text text-success mb-1">₹176</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/51KPFz4tPOL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="cute animal">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Babique Cat Flower Plush Soft Toy </h6> 
+                            <p class="card-text text-success mb-1">₹219</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/51gnPsVL0bL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="die">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">8 inch Plush Toy Dice Cube </h6> 
+                            <p class="card-text text-success mb-1">₹599</p>
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/41OpzxZI34L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="catterpillar">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Cute Plush Soft Toy-Catterpillar(65-cm)</h6> 
+                            <p class="card-text text-success mb-1">₹599</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71sh-Yt3EmL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="elephant">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Elephant Sitting Plush Soft Toy</h6> 
+                            <p class="card-text text-success mb-1">₹249</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/613ls1KV-HL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="rabbit">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Rabbit with Chain Reversible Bunny Rabbit Soft Stuffed Toys</h6> 
+                            <p class="card-text text-success mb-1">₹329</p>
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cars" class="mb-5">
+            <h4 class="mb-3" style="color: #e3447c;font-weight: bold;font-size: 1.5rem;border-bottom: 2px solid #e3447c;display: inline-block;">Cars and Other Vehicles</h4>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/81l+gdWR8OL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Toyshine Pack of 6 Free Wheel Speed Racing 1:72 Scale Die cast</h6> 
+                            <p class="card-text text-success mb-1">₹369</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+           
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/41r3UQtYUFL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="2cars">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Toy Imagine 4x4 Mini Monster Truck</h6> 
+                            <p class="card-text text-success mb-1">₹159</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            
+            
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71SZ6i+Au+L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwhells">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Kiddie Galaxia Mini Metal Car for Kids, Pack of 4 Mini Racers Series Diecast Cars</h6> 
+                            <p class="card-text text-success mb-1">₹298</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/51GZJJP1DxL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="trucks">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Push And Go Construction Vehicles Set of 4</h6> 
+                            <p class="card-text text-success mb-1">₹299</p>
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                    </div>
+                </div>
+            
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71DKbcOeHcL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="kidcars">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Go Car Toys for Toddlers</h6>
+                            <p class="card-text text-success mb-1">₹799</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/51xchlYDdnL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="foodtrucks">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Food Transport Foldable Vehicles Car Toy Pack Of 4 With 1 Screwdriver Tools</h6> <!-- already had name -->
+                            <p class="card-text text-success mb-1">₹488</p>
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/31eSi1lar0L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="vintage">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Wooden Vintage Classic Vehicle Car</h6> 
+                            <p class="card-text text-success mb-1">₹299</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71wOLMOG9YL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="army">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Friction-Powered Military Army Truck Toy Set with Music</h6> 
+                            <p class="card-text text-success mb-1">₹1,299</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dolls" class="mb-5">
+            <h4 class="mb-3" style="color: #e3447c;font-weight: bold;font-size: 1.5rem;border-bottom: 2px solid #e3447c;display: inline-block;">dolls</h4>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/61aXd3lzv4L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Soft Furry Wings Doll 50cm Single Piece Pink Color</h6> 
+                            <p class="card-text text-success mb-1">₹569</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/81x4ZbLCYqL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Barbie Mattel Doll and Fairytale Dress-Up Character Playset, Clothes and Accessories for Princess, Mermaid and Fairy Characters</h6> 
+                            <p class="card-text text-success mb-1">₹2,169</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71pWf18II2L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Toyshine Pack of 3 Cuties Doll Set for Kids, 6 Inches, PVC Non-Toxic Material, Assorted Dress Design</h6> 
+                            <p class="card-text text-success mb-1">₹387</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/81ulPkpldyL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Singing Songs and Poem Baby Girl Doll - Big Size-40cm</h6> 
+                            <p class="card-text text-success mb-1">₹569</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71D2Z7wjBAL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Toyshine 8 inches Realistic Jinny Baby Doll Girl </h6> 
+                            <p class="card-text text-success mb-1">₹399</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/61oIUOeDwdL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Dancing Animals EVA Doll | 34 cm Musical Plush Toy </h6> 
+                            <p class="card-text text-success mb-1">₹799</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/41UbqtnGdVL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Dancing Miracle Princess Toy Doll with Wings Interactive Revolving Cute Doll Colorful LED Lights and Music</h6> 
+                            <p class="card-text text-success mb-1">₹499</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/61yeRVy04QL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">15Cm Doll Set Movable Joints Makeup Cute (15-CM) (Pack of 2)</h6> 
+                            <p class="card-text text-success mb-1">₹599</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="puzzles" class="mb-5">
+            <h4 class="mb-3" style="color: #e3447c;font-weight: bold;font-size: 1.5rem;border-bottom: 2px solid #e3447c;display: inline-block;">Puzzles</h4>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/716j+FT-RaL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Wooden Russian Blocks Puzzles for Kids</h6> 
+                            <p class="card-text text-success mb-1">₹159</p>
+                            <p class="card-text text-warning mb-2">★★★☆☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/81-OSju+u1L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Wooden Animal Puzzle for Toddlers</h6> 
+                            <p class="card-text text-success mb-1">₹235</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71uQnNKMqcL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Co – Set of 6 Seasons Jigsaw Puzzles for Kids</h6> 
+                            <p class="card-text text-success mb-1">₹1,279</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/81V3RVN9rwL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Wooden 12 Piece Jigsaw Puzzle</h6> 
+                            <p class="card-text text-success mb-1">₹284</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/91ussIbOplL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Play & Learn Funskool India Map, Jigsaw Puzzle</h6> 
+                            <p class="card-text text-success mb-1">₹162</p>
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/61wBJaKac6L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">3D DIY Puzzle House Kit for Kids</h6> 
+                            <p class="card-text text-success mb-1">₹445</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/61uoh-m6TcL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Wood Art Store 6-in-One Wooden Puzzle Games Set 3D Puzzles</h6> 
+                            <p class="card-text text-success mb-1">₹799</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/51+mYazYsjL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">D Maze Game Brain Teaser Puzzle Ball Cube</h6> 
+                            <p class="card-text text-success mb-1">₹479</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="learning_toys" class="mb-5">
+            <h4 class="mb-3" style="color: #e3447c;font-weight: bold;font-size: 1.5rem;border-bottom: 2px solid #e3447c;display: inline-block;">Learning Toys</h4>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71SR1t-Fn5L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Math Learning Kit | Counting Peg Board For Kids | Number, Addition And Subtraction Game </h6> 
+                            <p class="card-text text-success mb-1">₹1,199</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71jIRdtmtyL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Wooden Learning Clock with Bead Lace, Educational Digital Analog Numbers, Shape & Color Learning Montessori Toy</h6>
+                            <p class="card-text text-success mb-1">₹199</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/61yXz5Mc3oL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Slide Puzzle Game Color Sorting & Pattern Matching Learning Toy</h6> 
+                            <p class="card-text text-success mb-1">₹479</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71svz7qSbaL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title"> Shape Sorting Cube With 18 Shape And Different Color </h6>
+                            <p class="card-text text-success mb-1">₹211</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/81gV+TyvDyL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Electronic Wall Chart Talking Albabets Numbers Interactive Educational Musical Poster </h6> 
+                            <p class="card-text text-success mb-1">₹839</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/71KBMy1AVbL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Alphabet,Letter,Words,Games,Mathematics,Music,Logic Memory Tool </h6> 
+                            <p class="card-text text-success mb-1">₹796</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/81oMF18n7cL._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Body Part Puzzle Kids Wooden Toys</h6> 
+                            <p class="card-text text-success mb-1">₹236</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="https://m.media-amazon.com/images/I/61CthooLI9L._AC_UL480_FMwebp_QL65_.jpg" class="card-img-top rounded" alt="hotwheel">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Premium 10 Pcs Stackable Blocks & Sequencing Cubes Toy</h6> 
+                            <p class="card-text text-success mb-1">₹199</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./cart.js"></script>
+
+</body>
+</html>

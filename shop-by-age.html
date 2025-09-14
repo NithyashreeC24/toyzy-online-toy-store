@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <title>Shop By Age</title>
+</head>
+<script src="./bootstrap/bootstrap.bundle.min.js"></script>
+<body>
+   <button onclick="window.location.href='login.html'" 
+        style="margin:10px; padding:8px 15px; background:#e3447c; color:white; border:none; border-radius:5px; cursor:pointer;">
+    ← Back to Home
+</button>
+
+
+    <div id="shop_by_age" class="my-5">
+        <h2 class="text-center mb-3" style="color:#e3447c">Shop by Age</h2>
+        <p class="text-center text-muted mb-5">Welcome to Toyzy! 🎉 Choose the perfect toys based on your child’s age group.  
+                Safe, fun, and full of learning – shop now!  
+        </p>
+        <div id="age-0-11" class="mb-5">
+            <h4 class="mb-3" style="color: #e3447c;font-weight: bold;font-size: 1.5rem;border-bottom: 2px solid #e3447c;display: inline-block;">0-11 Months</h4>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/1.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Shower cap</h6> 
+                            <p class="card-text text-success mb-1">₹299</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/3.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Babique Unicorn Teddy Bear Plush Soft Toy</h6> 
+                            <p class="card-text text-success mb-1">₹499</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/5.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Kangaroo soft toy</h6> 
+                            <p class="card-text text-success mb-1">₹499</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/6.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Supples Baby Cradle with Swing & Mosquito Net </h6> 
+                            <p class="card-text text-success mb-1">₹3129</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/8.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Light Up Crawling Dancing with Music Toy</h6> 
+                            <p class="card-text text-success mb-1">₹499</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/9.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Baby Cradle Automatic Swing with 5 Point Safety Harness, Remote Control, Mosquito Net, Smart Timer, Soothing Music </h6> <!-- already had name -->
+                            <p class="card-text text-success mb-1">₹8699</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/10.jpg" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Sleeping Bag & Carry Nest, Cotton Baby Bedding for New Born </h6> 
+                            <p class="card-text text-success mb-1">₹699</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/11.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Cable World Musical Keyboard Mat Piano Gym Mat Gym & Fitness Rack</h6> 
+                            <p class="card-text text-success mb-1">₹548</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/12.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Wooden crocket Rattles</h6> 
+                            <p class="card-text text-success mb-1">₹499</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/13.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Elephant Soft Toy for Kids</h6> 
+                            <p class="card-text text-success mb-1">₹590</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p>  
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/14.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Soft Toy White Color Teddy Bear</h6>
+                            <p class="card-text text-success mb-1">₹499</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/15.jpg" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Light Soft Silicone Nipple</h6> 
+                            <p class="card-text text-success mb-1">₹499</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/16.jpg" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Wodden Baby Basket</h6> 
+                            <p class="card-text text-success mb-1">₹499</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/17.jpg" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Babique Ball Soft Teddy Toy </h6> 
+                            <p class="card-text text-success mb-1">₹499</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/18.jpg" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Teddysoft Toy</h6> 
+                            <p class="card-text text-success mb-1">₹399</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/0-12 months/19.jpg" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Teddy with Wall Hanger</h6> 
+                            <p class="card-text text-success mb-1">₹899</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                
+                
+                    
+            </div>
+        </div>
+        <div id="age-1-3yrs" class="mb-5">
+            <h4 class="mb-3"style="color: #e3447c;font-weight: bold;font-size: 1.5rem;border-bottom: 2px solid #e3447c;display: inline-block;">1 - 2 Years</h4>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/1.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Cute Rotating Head Mini Crawling Caterpillar</h6> 
+                            <p class="card-text text-success mb-1">₹546</p> 
+                            <p class="card-text text-warning mb-2">★★★☆☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/2.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Flash Drum Toy with 2 Mallets</h6> 
+                            <p class="card-text text-success mb-1">₹320</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/3.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Horse Ride- Sturdy & Round Edges Push Ride</h6>
+                            <p class="card-text text-success mb-1">₹1,099</p>
+                            <p class="card-text text-warning mb-2">★★★★☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/4.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Ball Drop & Roll Ramp Game</h6>
+                            <p class="card-text text-success mb-1">₹275</p>
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/5.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Musical Light-Up Spinning Top Toy with Sound – Colourful Fidget Spinner  </h6> 
+                            <p class="card-text text-success mb-1">₹155</p>
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/6.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Key Operated Dancing Moving Caterpillar Toy</h6> 
+                            <p class="card-text text-success mb-1">₹299</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/7.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Little's Rainbow Stacking Cubes I Activity Toy for Babies </h6> 
+                            <p class="card-text text-success mb-1">₹169</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/8.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Kidsmate Lil’ Beats Drum Set for Kids | Musical Toy Set with 3 Drums, 1 Cymbal, Drumsticks & Stool</h6> 
+                            <p class="card-text text-success mb-1">₹999</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/9.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Xylophone Toy with Colorful Keys & 2 Mallets </h6>
+                            <p class="card-text text-success mb-1">₹278</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/10.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Elephant Tusker Ride-on</h6> 
+                            <p class="card-text text-success mb-1">₹1.299</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/12.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Swing Car, Kids Push Car, Magic Car for Kids, Comfortable Seats</h6> 
+                            <p class="card-text text-success mb-1">₹1,499</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/1-3yrs/13.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Construction Block Set for Children</h6> 
+                            <p class="card-text text-success mb-1">₹269</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+            </div>   
+                
+                
+        </div>
+        <div id="age-3-6yrs" class="mb-5">
+            <h4 class="mb-3" style="color: #e3447c;font-weight: bold;font-size: 1.5rem;border-bottom: 2px solid #e3447c;display: inline-block;">3 - 6 Years</h4>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/1.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">36 Pieces Alphabet & Number Floor Mats for Kids</h6> 
+                            <p class="card-text text-success mb-1">₹185</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/2.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">GY3716 Battery Operated Multi-Functional Portable Organ/Piano/Keyboard Musical Toy for Kids</h6> 
+                            <p class="card-text text-success mb-1">₹196</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/3.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Mapology India with State Capitals - Educational Toy and Learning Aid</h6> 
+                            <p class="card-text text-success mb-1">₹425</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/4.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Go Dancing Dog with Music, Flashing Lights </h6> 
+                            <p class="card-text text-success mb-1">₹348</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/5.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Mapology Continents - Educational Toy and Learning Aid</h6> 
+                            <p class="card-text text-success mb-1">₹125</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/6.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Colorful Double-Sided Flash Cards, Educational Cards, Interactive Learning Toys for Kids,224 Words Develop Language Skills</h6> 
+                            <p class="card-text text-success mb-1">₹287</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/7.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">My First 1000 Words: Early Learning Picture Book</h6> 
+                            <p class="card-text text-success mb-1">₹199</p>
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/8.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Geometric Shape and Color Matching Puzzle Board Game with Bell</h6> 
+                            <p class="card-text text-success mb-1">₹269</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/9.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title"> Crawling Caterpillar Toy Toddler Toys for Kids Flexible Clicky Sound Making Sensory Toys</h6> 
+                            <p class="card-text text-success mb-1">₹194</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/10.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Solar System Early Learning Educational Chart for Kids | 20"X30" inch </h6>
+                            <p class="card-text text-success mb-1">₹79</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/11.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Set of 2 Wild Animals and Birds Early Learning Educational Charts for Kids | 20"X30" inch</h6> 
+                            <p class="card-text text-success mb-1">₹198</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/3-6 yrs/12.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Storio Toys 3 in 1 Wooden Puzzles for Toddlers | Educational Board Game ABCD Alphabets, Numbers & Shapes Puzzles</h6> 
+                            <p class="card-text text-success mb-1">₹269</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="age-7-15yrs" class="mb-5">
+            <h4 class="mb-3" style="color: #e3447c;font-weight: bold;font-size: 1.5rem;border-bottom: 2px solid #e3447c;display: inline-block;">7 - 15 Years</h4>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/1.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">100 Maths Puzzles Book - Brain Boosting Mathematical Activities</h6> 
+                            <p class="card-text text-success mb-1">₹216</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/2.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Speed Up Master Shot Combo Box Cricket Kit for Kids (Bat Size: 4)</h6> 
+                            <p class="card-text text-success mb-1">₹1,447</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/3.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Interactive Layers with 90 Magnetic Puzzle Pieces to Learn About The Human Skeleton Muscles & Organs</h6> 
+                            <p class="card-text text-success mb-1">₹1,227</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/4.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Kids String Hockey Table Board Games Indoor Games</h6> 
+                            <p class="card-text text-success mb-1">₹500</p>
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/5.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Table Tennis Trainer Toys for Kids</h6>
+                            <p class="card-text text-success mb-1">₹549</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/6.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">101 Cool Science Experiments </h6> 
+                            <p class="card-text text-success mb-1">₹360</p>
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/7.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">The Little Ones Mechanical Vehicle Building Kit </h6> 
+                            <p class="card-text text-success mb-1">₹689</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/8.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Toy Imagine DIY Bracelet Making Kit for Girls</h6> 
+                            <p class="card-text text-success mb-1">₹299</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/9.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">150 Experiments School Science Project Kit</h6> 
+                            <p class="card-text text-success mb-1">₹789</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/10.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">150 Experiments School Science Project Kit</h6> 
+                            <p class="card-text text-success mb-1">₹299</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/11.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Plastic Foam Blaster Gun Toy with 6 Foam Darts</h6> 
+                            <p class="card-text text-success mb-1">₹385</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/7-15 yrs/12.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Kids Sport Racket Toy Set, with 2 Tennis & 2 Badminton Balls</h6> 
+                            <p class="card-text text-success mb-1">₹737</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="age-16yrs_and_above" class="mb-5">
+            <h4 class="mb-3" style="color: #e3447c;font-weight: bold;font-size: 1.5rem;border-bottom: 2px solid #e3447c;display: inline-block;">15 Years and above</h4>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/1.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">3-in-1 Wooden 3D Puzzle Games Set </h6> 
+                            <p class="card-text text-success mb-1">₹475</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/2.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">A4 100 Coloured Sheets</h6> 
+                            <p class="card-text text-success mb-1">₹120</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/3.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Wireless video games for tv gaming Retro gaming console with Game Stick 1080p Plug & Play TV Video Game Set for 2 player with 9Emulator </h6> 
+                            <p class="card-text text-success mb-1">₹1499</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/4.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">3x3 Mirror (Silver) Magic Speed Cube</h6>
+                            <p class="card-text text-success mb-1">₹296</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/5.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Tic Tac Toe Bolt Game, 4-in-1 Handheld Portable Electronic Toy Rechargeable, Educational Board Games Puzzle</h6> 
+                            <p class="card-text text-success mb-1">₹799</p>
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/6.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Shuttle Art Office Desk Organizer with Drawer</h6> 
+                            <p class="card-text text-success mb-1">₹198</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/7.png" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Naruto Cards - Anime Playing Card Deck</h6>
+                            <p class="card-text text-success mb-1">₹283</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/8.png" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Wooden Labyrinth Board Game Ball in a Maze Puzzle</h6> 
+                            <p class="card-text text-success mb-1">₹174</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/9.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title"></h6>Triangle Chinese Checkers Board Game 
+                            <p class="card-text text-success mb-1">₹216</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/10.webp" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Sports Cricket Kit Grand Edition VK-18 Virat Kohli Complete Cricket Kit Ideal for Practice</h6>
+                            <p class="card-text text-success mb-1">₹4,216</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p>
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/11.png" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title"> Battery Operated Pottery Making Machine Painting Kit Clay Moulding Playset</h6> 
+                            <p class="card-text text-success mb-1">₹799</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card product-card h-100 text-center shadow">
+                        <img src="./assests/16-above/12.png" class="card-img-top rounded" alt="Shower cap">
+                        <div class="card-body d-flex flex-column">
+                            <h6 class="card-title">Wooden 4 in 1 Board Game for Kids & Adults| Ludo & Chess |Snake Ladder & Tic Tac Toe| Size 12 x 12 inch</h6> 
+                            <p class="card-text text-success mb-1">₹455</p> 
+                            <p class="card-text text-warning mb-2">★★★★☆</p> 
+                            <button class="btn mt-auto" style="background-color: #e3447c;color: #fff;"
+                                onclick="addToCartFromCard(this)">
+                                Add to Cart</button>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./cart.js"></script>
+
+</body>
+</html>
